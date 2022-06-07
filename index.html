@@ -57,10 +57,12 @@
 		<!-- Head Libs -->
 		<script src="js/modernizr.min.js"></script>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.js"></script>
+		<script src="js/jquery-3.6.0.js"></script>
 		<script> 
+
 			$(function(){
-				$("#IncludeFooter").load("/footer.html/"); 
+				$("#includeFooter").load("footer.html");
+				$("#includeContact").load("contact.html"); 
 			});
 		</script> 
 
@@ -1065,11 +1067,12 @@
 				</div>
 
 		</div>
-		
-		<div id="IncludeFooter"></div>
+		<p>before includes</p>
+		<div id='includeContact'></div>
+		<div id="includeFooter"></div>
+		<p>after include</p>
 
-
-		<link rel="import" href="components.html">
+		<!--<link rel="import" href="components.html">-->
 
 
 		<!-- Vendor -->
