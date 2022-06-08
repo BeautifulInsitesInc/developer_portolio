@@ -59,10 +59,10 @@
 
 		<script src="js/jquery-3.6.0.js"></script>
 		<script> 
-
-			$(function(){
-				$("#includeFooter").load("footer.html");
-				$("#includeContact").load("contact.html"); 
+			$(document).ready(function () {
+				$("div[data-includeHTML]").each(function () {                
+					$(this).load($(this).attr("data-includeHTML"));
+				});
 			});
 		</script> 
 
@@ -1005,9 +1005,6 @@
 
 				<div class="map-above" style="min-height: 600px;">
 
-					<!-- Google Maps - Go to the bottom of the page to change settings and map location. -->
-					<div id="googlemaps" class="map-above-map google-map m-0" style="min-height: 600px;" data-spy-offset="20"></div>
-
 					<section class="map-above-content section border-0 m-0 p-0">
 						<div class="container pt-3 pt-sm-5 pt-md-0">
 							<div class="row">
@@ -1068,8 +1065,8 @@
 
 		</div>
 		<p>before includes</p>
-		<div id='includeContact'></div>
-		<div id="includeFooter"></div>
+		<div data-includeHTML="_contact.html"></div>
+		<div data-includeHTML="_footer.html"></div>
 		<p>after include</p>
 
 		<!--<link rel="import" href="components.html">-->
