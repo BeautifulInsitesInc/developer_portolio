@@ -1,0 +1,54 @@
+#top-banner2 {
+    background-image: url(img/1.jpg);
+    background-color: red;
+    
+    width: 100%;
+    height: 100%;
+    top: 0;
+
+}
+
+
+.topimage {
+    background-image: url(/img/2.jpg);
+    background-attachment: fixed;
+    background-color: red;
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(8px);
+}
+
+
+.topimage::before {
+    background-image: url(/img/2.jpg);
+    
+    
+    
+
+    background-attachment: fixed;
+    
+
+}
+
+.topimage::after{
+    position: relative;
+
+}*/
+
+#techstack {
+    
+    background: transparent;
+}
+
+.u-non-blurred {
+    position: relative;
+    z-index: 1;;
+}
+
+.main {
+    z-index: 1;
+}
+
+#techsctack {
+    z-index: 2;
+}
