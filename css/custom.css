@@ -8,7 +8,6 @@
     /*background-size: 1920px 1000px;*/
     background-size: cover;
     /*filter: brightness(30%);*/
-    filter: brightness(80%);
 }
 
 /* Menu bar */
@@ -26,12 +25,56 @@
     position: relative; 
 }
 
-.title-class {
+div#web-professional-box {
     display: block;
 	margin-bottom: 20px;
-	opacity: 0;
+	opacity: 1;
+    position: sticky;
+    top: 200px;
+    height: 400px;
 
 }
+
+h2#author {
+    font-size: 1.5rem !important;
+}
+
+h1#main-title {
+    color: fff;
+    font-weight: 700 !important;
+    font-size: 4.5em !important;
+}
+
+p#what--love {
+    position: absolute;
+    top: 100px !important ;
+    font-size: 2rem !important;
+    padding-top: 7rem;
+    z-index: -1;
+
+}
+
+span#loving {
+    position:absolute !important;
+    top: 180px;
+    z-index: 9999 !important;
+    transform: rotate(-13deg);
+}
+
+
+a#help-button {
+    display: inline-block !important;
+    position: absolute;
+    top: 350px;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    width: 200px;
+    left: 40%;
+}
+
+
 
 /*title layout */
 #title-align.row {
@@ -71,7 +114,7 @@
     #main-title-box {
         max-width: 900px !important;
     }
-    #webprofessional-box {
+    #web-professional-box {
 		flex: none;
 		width: 900px !important;
     }
