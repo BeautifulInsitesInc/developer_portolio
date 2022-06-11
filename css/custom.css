@@ -1,54 +1,98 @@
-#top-banner2 {
-    background-image: url(img/1.jpg);
-    background-color: red;
-    
-    width: 100%;
-    height: 100%;
-    top: 0;
-
-}
-
-
-.topimage {
-    background-image: url(/img/2.jpg);
+.background-image {
+    background-image: url(/img/whitedesk.jpg);
     background-attachment: fixed;
     background-color: red;
-    background-size: cover;
+    
     background-repeat: no-repeat;
-    backdrop-filter: blur(8px);
+    background-position: center;
+    /*background-size: 1920px 1000px;*/
+    background-size: cover;
+    /*filter: brightness(30%);*/
+    filter: brightness(80%);
 }
 
+/* Menu bar */
+.header-row {
+    background-color: #333333;
+}
 
-.topimage::before {
-    background-image: url(/img/2.jpg);
-    
-    
-    
+#social  {
+    display: block;
+    position: relative; 
 
-    background-attachment: fixed;
-    
+}
+#title-screen {
+    display: block;
+    position: relative; 
+}
+
+.title-class {
+    display: block;
+	margin-bottom: 20px;
+	opacity: 0;
 
 }
 
-.topimage::after{
-    position: relative;
-
-}*/
-
-#techstack {
-    
+/*title layout */
+#title-align.row {
+    display: block;
+    padding-top: 200px;
+    width: 900px;
+}
+#techstack {title-alignment
     background: transparent;
 }
 
-.u-non-blurred {
-    position: relative;
-    z-index: 1;;
+/* Keep animated writing on small screens */
+@media (min-width: 320px) {
+    .d-md-block {
+        display: block !important;
+    }
 }
 
-.main {
-    z-index: 1;
+/* Web Professional media override */
+@media(min-width: 320px){
+    .text-sm-start {
+        text-align: left !important;
+    }
 }
 
-#techsctack {
-    z-index: 2;
+@media(min-width: 1200px){
+    /*.container:not(.container-bs):not(.container-xl-custom):not(.container-xxl-custom) {
+	*/
+    #main-title-box {
+        max-width: 900px !important;
+	}
+}
+
+@media(min-width: 992px){
+    /*.container-lg, .container-md, .container-sm, .container {
+	*/
+    #main-title-box {
+        max-width: 900px !important;
+    }
+    #webprofessional-box {
+		flex: none;
+		width: 900px !important;
+    }
+}
+
+/* Center info on screen*/
+@media (min-width: 768px) {
+	/*.container-md, .container-sm, .container {
+	
+    */
+    .title-alignment{
+        max-width: 420px;
+	}
+}
+
+
+@media (min-width: 576px) {
+	/*.container-sm, .container {
+	
+    */
+    .title-alignment{
+        max-width: 440px;
+	}
 }
