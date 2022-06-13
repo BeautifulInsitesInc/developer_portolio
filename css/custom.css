@@ -92,10 +92,53 @@ section#about {
     background: transparent;
 }
 
+/* ========== HEADINGS ================= */
 
-.page-title {/* add space under title to fix cutoff */
-    padding-bottom: 1.0rem;
+h2.font-level1 {/* 1st smaller blue title */
+    /* animation-delay: 100ms;
+    color: #0088cc !important;
+    font-weight: 600 !important;
+    line-height: 1.7 !important;
+    font-size: 1em !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 0 !important;
+    -webkit-font-smoothing: antialiased; */
 }
+
+h3#tech-stack-heading2 {
+    color: white !important;
+}
+
+h3.font-level2 {/* 2nd subtitle */
+    padding-bottom: 1.0rem;/* add space under title to fix cutoff */
+}
+
+/* ========= TECH GRID =============== */
+.tech-grid {
+    display: grid;
+    gap: 1rem; 
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: 
+        repeat(auto-fit, minmax(10rem, 18%));
+    padding-block: 2rem;
+
+}
+.tech-item, .tech-item h4 {
+    text-align: center;
+    color: white !important;
+    font-size: 1em;
+}
+
+.tech-item img{
+    width: 96px;
+}
+
+
+
+
+
+/* ======== MEDIA =========================*/
+
 
 /* Web Professional media override */
 @media(min-width: 320px){
@@ -105,8 +148,6 @@ section#about {
 }
 
 @media(min-width: 1200px){
-    /*.container:not(.container-bs):not(.container-xl-custom):not(.container-xxl-custom) {
-	*/
     #main-title-box {
         max-width: 900px !important;
 	}
