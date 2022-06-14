@@ -137,7 +137,8 @@ h3.font-level2 {/* 2nd subtitle */
 }
 
 .tech-item img{
-    width: 96px;
+    max-width: 96px;
+    width: 10vw;
 }
 
 
