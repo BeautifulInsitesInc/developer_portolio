@@ -7,6 +7,9 @@
     background-position: center;
     /*background-size: 1920px 1000px;*/
     background-size: cover;
+    /* background-size: 100em; */
+    background-position-y: top;
+    /* background-size: auto; */
     /*filter: brightness(30%);*/
 }
 
@@ -129,6 +132,8 @@ h3.font-level2 {/* 2nd subtitle */
     text-align: center;
     color: white !important;
     font-size: 1em;
+    max-width: 96px;
+    justify-self: center;
 }
 
 .tech-item img{
