@@ -1,0 +1,236 @@
+.background-image {
+    background-image: url(../img/whitedesk.jpg);
+    background-attachment: fixed;
+    background-color: red;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background-size: 1920px 1000px;*/
+    background-size: cover;
+    /* background-size: 100em; */
+    background-position-y: top;
+    /* background-size: auto; */
+    /*filter: brightness(30%);*/
+}
+
+/* ========== Menu bar =========*/
+.header-row {
+    background-color: #333333;
+}
+
+#social  {
+    display: block;
+    position: relative; 
+/* ====== TITLE SCREEN ======= */
+}
+#title-screen {
+    /* display: block; */
+    /* position: relative;  */
+}
+
+div#web-professional-box {
+    flex: none;
+    display: block;
+	margin-bottom: 20px;
+	opacity: 1;
+    position: sticky;
+    top: 200px;
+    height: 400px;
+
+}
+
+h2#author {
+    font-size: 1.5rem !important;
+}
+
+h1#main-title {
+    color: fff;
+    font-weight: 700 !important;
+    font-size: 4.5em !important;
+}
+
+p#what--love {
+    position: absolute;
+    top: 100px !important ;
+    font-size: 2rem !important;
+    /*padding-top: 7rem;*/
+    z-index: -1;
+
+}
+
+span#loving {
+    position:absolute !important;
+    top: 180px;
+    z-index: 9999 !important;
+    transform: rotate(-13deg);
+}
+
+
+a#help-button {
+    display: inline-block !important;
+    position: absolute;
+    top: 350px;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
+    padding-top: .7rem;
+    padding-bottom: .7rem;
+    width: 200px;
+    left: 40%;
+}
+
+
+
+/*title layout */
+#title-align.row {
+    display: block;
+    padding-top: 200px;
+    width: 900px;
+}
+
+section#about {
+    background-color: white !important;
+}
+
+#techstack {title-alignment
+    background: transparent;
+}
+
+/* ========== HEADINGS ================= */
+
+h2.font-level1 {/* 1st smaller blue title */
+    /* animation-delay: 100ms;
+    color: #0088cc !important;
+    font-weight: 600 !important;
+    line-height: 1.7 !important;
+    font-size: 1em !important;
+    letter-spacing: 2px !important;
+    margin-bottom: 0 !important;
+    -webkit-font-smoothing: antialiased; */
+}
+
+h3#tech-stack-heading2 {
+    color: white !important;
+}
+
+h3.font-level2 {/* 2nd subtitle */
+    padding-bottom: 1.0rem;/* add space under title to fix cutoff */
+}
+
+/* ========= TECH GRID =============== */
+
+.tech-grid {
+    display: grid;
+    gap: 1rem; 
+    /* grid-template-columns: repeat(5, 1fr); */
+    grid-template-columns: 
+        repeat(auto-fit, minmax(6rem, 18%));
+    padding-block: 2rem;
+    justify-content: center;
+
+}
+.tech-item, .tech-item h4 {
+    text-align: center;
+    color: white !important;
+    font-size: 1em;
+    max-width: 96px;
+    justify-self: center;
+}
+
+.tech-item img{
+    max-width: 96px;
+    width: 10vw;
+}
+
+
+
+
+
+/* ======== MEDIA =========================*/
+
+
+/* Web Professional media override */
+@media(min-width: 320px){
+    .text-sm-start {
+        text-align: left !important;
+    }
+}
+
+@media(min-width: 1200px){
+    #main-title-box {
+        max-width: 900px !important;
+	}
+}
+
+@media(min-width: 992px){
+    /*.container-lg, .container-md, .container-sm, .container {
+	*/
+    #main-title-box {
+        max-width: 500px !important;
+    }
+    div#web-professional-box {
+        display: block;
+        margin-bottom: 20px;
+        opacity: 1;
+        position: sticky;
+        top: 25px;
+        height: 400px;
+        width: 600px !important;
+    }
+    h2#author {
+        font-size: 1.1rem !important;
+    }
+    
+    h1#main-title {
+        color: fff;
+        font-weight: 700 !important;
+        font-size: 3em !important;
+    }
+    
+    p#what--love {
+        position: absolute;
+        top: 100px !important ;
+        font-size: 1.5rem !important;
+        /*padding-top: 7rem;*/
+        z-index: -1;
+    
+    }
+    
+    span#loving {
+        position:absolute !important;
+        top: 100x;
+        z-index: 9999 !important;
+        transform: rotate(-13deg);
+    }
+    #title-align.row {
+        display: block;
+        padding-top: 10px;
+        width: 500px;
+    }
+}
+
+/* Center info on screen*/
+@media (min-width: 768px) {
+	/*.container-md, .container-sm, .container {
+	
+    */
+    .title-alignment{
+        max-width: 420px;
+	}
+}
+
+
+@media (min-width: 576px) {
+	/*.container-sm, .container {
+	
+    */
+    .title-alignment{
+        max-width: 440px;
+	}
+}
+
+/* Keep animated writing on small screens */
+@media (min-width: 320px) {
+    .d-md-block {
+        display: block !important;
+    }
+}

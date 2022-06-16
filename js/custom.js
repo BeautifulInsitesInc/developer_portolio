@@ -9,8 +9,10 @@ $(window).scroll(function(e) {
     if (lightAmount <15) {lightAmount=15;}
 
 
-    $('.no-blur').css('backdrop-filter', 'blur('+blurAmount+'px)'+'brightness('+lightAmount+'%)');
-    $('div#web-professional-box').css('filter', 'opacity('+textOpacity+')');
+    // $('.no-blur').css('backdrop-filter', 'blur('+blurAmount+'px)'+'brightness('+lightAmount+'%)');
+    // $('div#web-professional-box').css('filter', 'opacity('+textOpacity+')');
+    // $('.background-image').css('filter', 'opacity('+textOpacity+')');
+
     //$('.no-blur').css('backdrop-filter', 'brightness('+lightAmount+'%)');
 
 });
