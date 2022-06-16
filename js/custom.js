@@ -6,13 +6,14 @@ $(window).scroll(function(e) {
     var lightAmount=100-blurRatio*8;
     var textOpacity=(100-blurRatio*12)/100;
     if (blurRatio >15) {blurAmount = 15;}
-    if (lightAmount <15) {lightAmount=15;}
+    if (lightAmount >100) {lightAmount=100;}
 
 
-    // $('.no-blur').css('backdrop-filter', 'blur('+blurAmount+'px)'+'brightness('+lightAmount+'%)');
-    // $('div#web-professional-box').css('filter', 'opacity('+textOpacity+')');
-    // $('.background-image').css('filter', 'opacity('+textOpacity+')');
+    //$('#title-container').css('filter', 'blur('+blurAmount+'px)'+'brightness('+lightAmount+'%)');
+    // $('#background-desk-image').css('filter', 'blur('+blurAmount+'px)'+'brightness('+lightAmount+'%)');
 
-    //$('.no-blur').css('backdrop-filter', 'brightness('+lightAmount+'%)');
+    // $('#title-container').css('filter', 'opacity('+textOpacity+')');
+
+    $('section#techstack.background').css('filter', 'brightness('+lightAmount+'%)');
 
 });

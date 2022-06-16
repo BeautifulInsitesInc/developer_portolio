@@ -5,7 +5,9 @@
     
 }
 
-
+.body {
+    
+}
 /* ========== MENU =========*/
 .header-row {
     background-color: #333333;
@@ -27,7 +29,9 @@ div#title-container {
 #background-desk-image {
     display: flexbox;
     /* size: 1440px 700px; */
-    min-height: 100vh;
+    /* min-height: 100vh; */
+    width: auto;
+    height: 100vh;
     z-index: 0;
     position:fixed;
     top: 0%;
@@ -39,56 +43,65 @@ div#title-container {
     display: block;
     position: fixed;
     max-width: 900px;
-    min-width: 400px;
+    /* min-width: 400px; */
     padding-top: 10vh;
     width: 70vh;
     font-size: 1.5vh;
+    color: white !important;
 
 }
 
 h2#author {
     font-size: 3vh !important;
+    margin-bottom: 2vh !important;
 }
 
 h1#main-title {
     display: block !important;
-    color: fff;
+    color: white !important;
     font-weight: 700 !important;
     font-size: 7vh !important;
-    margin-bottom: 0px !important;
+    /* padding-top: 2vh; */
+    margin-bottom: 8vh !important;
 }
 
 p#third-line {
     display: block;
+    color: white;
     font-size: 3vh !important;
-    align-self: center !important;
-    justify-self: center !important;
-    padding-right: 0px !important;
     width: 100% !important;
-    margin-top: 0px !important;
     text-align: center !important;
+    margin-bottom: 2.0vh;
     z-index: 2;
 
 }
 
 span#blue-text-animation {
-    position: relative;
+    display: block;
+    font-size: 3vh;
     text-align: right !important;
-    padding-top: 2em !important;
+    padding-top: -10vh !important;
     z-index: 9999 !important;
     transform: rotate(-13deg);
+    margin-bottom: 7vh;
     /* margin-top: 1em !important; */
+}
+
+.blue-text-dash {
+    width: auto;
+    height: 1vh;
 }
 
 
 a#help-button {
-    display: block !important;
+    display: flex !important; 
     font-size: 2hv !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    padding-left: 1.4em;
-    padding-right: 1.4em;
-    padding-top: .7em;
+    
+    padding-left: 2em;
+    padding-right: .0em;
+    padding-top: 0em;
     padding-bottom: .7em;
     width: 14em;
 }
@@ -124,6 +137,18 @@ h3.font-level2 {/* 2nd subtitle */
 
 /* ========= TECH GRID =============== */
 
+#techstack {
+    
+
+}
+
+#techstack-background {
+    background-color: aqua;
+    width: 100%;
+    height: 100%;
+    z-index: 0;;
+}
+
 .tech-grid {
     display: grid;
     gap: 1rem; 
@@ -132,6 +157,7 @@ h3.font-level2 {/* 2nd subtitle */
         repeat(auto-fit, minmax(6rem, 18%));
     padding-block: 2rem;
     justify-content: center;
+    z-index: 9999;
 
 }
 .tech-item, .tech-item h4 {
@@ -140,11 +166,13 @@ h3.font-level2 {/* 2nd subtitle */
     font-size: 1em;
     max-width: 96px;
     justify-self: center;
+    z-index: 10001;
 }
 
 .tech-item img{
     max-width: 96px;
     width: 10vw;
+    z-index: 100002;
 }
 
 /* ========== ABOUT =============== */
@@ -163,11 +191,7 @@ section#what-I-do {
     background-color: white !important;
 }
 
-/* ========== WHAT I DO =========== */
-section#what-I-do {
-    position: relative;
-    background-color: white !important;
-}
+
 
 
 
@@ -179,14 +203,14 @@ section#value-add {
     background-color: white !important;
 }
 
-/* ========== VALUE ADD ==============*/
+/* ========== TESTIMONIALS ==============*/
 section#testimonials {
     position: relative;
     background-color: #dddddd !important;
 }
 
 
-/* ========== VALUE ADD ==============*/
+/* ========== PORTFOLIO ==============*/
 section#portfolio {
     position: relative;
     background-color: white !important;
@@ -198,20 +222,70 @@ section#portfolio {
 /* ========== MEDIA =================*/
 
 @media(max-height: 700px){/*This is the smallest the monitor in the picture goes */
-    div#title-container {
-        
-        
-        
+    h2#author {
+        font-size: 4vh !important;
+        margin-bottom: .25em !important;
     }
-    div#title-box {
-        max-width: 600px;
-        width: 500px;
-        padding-top: 50px;
-        font-size: 9px;
+    
+    h1#main-title {
+        font-weight: 700 !important;
+        font-size: 7vh !important;
+        margin-bottom: 1vh !important;
+    }
+    
+    p#third-line {
+        font-size: 3vh !important;
+        margin-bottom: 2.0vh;
+    }
+    
+    span#blue-text-animation {
+        padding-top: -10vh !important;
+        transform: rotate(-13deg);
+        margin-bottom: 5vh;
+    }
+
+    a#help-button {
+        padding-left: 2em;
+        padding-right: .0em;
+        padding-top: 0em;
+        padding-bottom: .7em;
+        width: 16em;
     }
 
 }
 
+@media(max-height: 490px){/*This is the smallest the monitor in the picture goes */
+    h2#author {
+        font-size: 4vh !important;
+        margin-bottom: 0em !important;
+    }
+    
+    h1#main-title {
+        font-weight: 700 !important;
+        font-size: 7vh !important;
+        margin-bottom: 0vh !important;
+    }
+    
+    p#third-line {
+        font-size: 3vh !important;
+        margin-bottom: 0vh;
+    }
+    
+    span#blue-text-animation {
+        padding-top: -30vh !important;
+        transform: rotate(-13deg);
+        margin-bottom: 2vh;
+    }
+
+    a#help-button {
+        padding-left: 2em;
+        padding-right: .0em;
+        padding-top: 0em;
+        padding-bottom: .7em;
+        width: 18em;
+    }
+
+}
 
 
 /* Web Professional media override */
