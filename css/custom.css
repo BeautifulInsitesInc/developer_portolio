@@ -46,56 +46,48 @@ div#title-container {
     /* min-width: 400px; */
     padding-top: 10vh;
     width: 70vh;
-    font-size: 1.5vh;
+    font-size: 2vh;
     color: white !important;
 
 }
 
 h2#author {
-    font-size: 3vh !important;
+    font-size: 2em !important;
     margin-bottom: 2vh !important;
 }
-
 h1#main-title {
     display: block !important;
     color: white !important;
     font-weight: 700 !important;
-    font-size: 7vh !important;
+    font-size: 4em !important;
     /* padding-top: 2vh; */
-    margin-bottom: 8vh !important;
+    margin-bottom: .8em !important;
 }
-
 p#third-line {
     display: block;
     color: white;
-    font-size: 3vh !important;
+    font-size: 1.75em !important;
     width: 100% !important;
     text-align: center !important;
-    margin-bottom: 2.0vh;
+    margin-bottom: .8em;
     z-index: 2;
-
 }
-
 span#blue-text-animation {
     display: block;
-    font-size: 3vh;
+    font-size: 1.5em;
     text-align: right !important;
-    padding-top: -10vh !important;
+    padding-top: -5em !important;
     z-index: 9999 !important;
     transform: rotate(-13deg);
-    margin-bottom: 7vh;
-    /* margin-top: 1em !important; */
+    margin-bottom: 2em;
 }
-
 .blue-text-dash {
     width: auto;
-    height: 1vh;
+    height: .3em;
 }
-
-
 a#help-button {
     display: flex !important; 
-    font-size: 2hv !important;
+    font-size: 1em !important;
     margin-left: auto !important;
     margin-right: auto !important;
     
@@ -222,12 +214,15 @@ section#portfolio {
 /* ========== MEDIA =================*/
 
 @media(max-height: 700px){/*This is the smallest the monitor in the picture goes */
+    #title-box {
+        /* font-size: .75vh; */
+    }
     h2#author {
         font-size: 4vh !important;
         margin-bottom: .25em !important;
     }
     h1#main-title {
-        font-size: 7vh !important;
+        /* font-size: 7vh !important; */
         margin-bottom: 1vh !important;
     }
     p#third-line {
@@ -249,13 +244,55 @@ section#portfolio {
     }
     #title-box {
         max-width: 700px;
-        padding-top: 10vh;
-        width: 75vw;
-        font-size: 1.5vh;
+        padding-top: 10vw;
+        width: 70vw;
+        font-size: 2vw;
     }
-
+    h2#author {
+        margin-bottom: .5em !important;
+    }
+    h1#main-title {
+        margin-bottom: .25em !important;
+    }
+    p#third-line {
+        margin-bottom: .25em;
+    }
+    span#blue-text-animation {
+        display: block !important;
+        padding-top: -30vh !important;
+        margin-bottom: 2em;
+    }
 }
 
+@media(max-width: 500px) {
+    #background-desk-image {
+        height: 100vw;
+    }
+    #title-box {
+        max-width: 700px;
+        padding-top: 10vw;
+        width: 70vw;
+        font-size: 2vw;
+    }
+    h2#author {
+        margin-bottom: -.5em !important;
+    }
+    h1#main-title {
+        margin-bottom: -.25em !important;
+    }
+    p#third-line {
+        margin-bottom: -.75em;
+    }
+    span#blue-text-animation {
+        display: block !important;
+        padding-top: -30vh !important;
+        margin-bottom: 2em;
+    }
+    a#help-button {
+        width: 20em;
+    } 
+
+}
 
 @media(max-height: 490px){/*This is the smallest the monitor in the picture goes */
     h2#author {
