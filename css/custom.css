@@ -246,7 +246,7 @@ section#portfolio {
         max-width: 700px;
         padding-top: 10vw;
         width: 70vw;
-        font-size: 2vw;
+        font-size: 2vmin;
     }
     h2#author {
         margin-bottom: .5em !important;
@@ -272,7 +272,7 @@ section#portfolio {
         max-width: 700px;
         padding-top: 10vw;
         width: 70vw;
-        font-size: 2vw;
+        font-size: 2vmin;
     }
     h2#author {
         margin-bottom: -.5em !important;
