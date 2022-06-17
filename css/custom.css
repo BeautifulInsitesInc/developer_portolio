@@ -226,65 +226,56 @@ section#portfolio {
         font-size: 4vh !important;
         margin-bottom: .25em !important;
     }
-    
     h1#main-title {
-        font-weight: 700 !important;
         font-size: 7vh !important;
         margin-bottom: 1vh !important;
     }
-    
     p#third-line {
         font-size: 3vh !important;
         margin-bottom: 2.0vh;
     }
-    
     span#blue-text-animation {
         padding-top: -10vh !important;
-        transform: rotate(-13deg);
         margin-bottom: 5vh;
     }
-
     a#help-button {
-        padding-left: 2em;
-        padding-right: .0em;
-        padding-top: 0em;
-        padding-bottom: .7em;
         width: 16em;
+    }
+}
+/* Shrink image on small screens */
+@media(max-width: 800px) {
+    #background-desk-image {
+        height: 100vw;
+    }
+    #title-box {
+        max-width: 700px;
+        padding-top: 10vh;
+        width: 75vw;
+        font-size: 1.5vh;
     }
 
 }
+
 
 @media(max-height: 490px){/*This is the smallest the monitor in the picture goes */
     h2#author {
         font-size: 4vh !important;
         margin-bottom: 0em !important;
     }
-    
     h1#main-title {
-        font-weight: 700 !important;
-        font-size: 7vh !important;
         margin-bottom: 0vh !important;
     }
-    
     p#third-line {
         font-size: 3vh !important;
         margin-bottom: 0vh;
     }
-    
     span#blue-text-animation {
         padding-top: -30vh !important;
-        transform: rotate(-13deg);
         margin-bottom: 2vh;
     }
-
     a#help-button {
-        padding-left: 2em;
-        padding-right: .0em;
-        padding-top: 0em;
-        padding-bottom: .7em;
         width: 18em;
     }
-
 }
 
 
